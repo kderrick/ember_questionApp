@@ -1,0 +1,10 @@
+<h1>Welcome users!</h1>
+
+<h3>Please post a question below</h3>
+
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}}'s {{question.text}} {{question.details}}</li>
+  {{/each}}
+</ul>
