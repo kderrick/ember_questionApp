@@ -9,4 +9,11 @@
   {{/each}}
 </ul>
 
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.title}} {{answer.author}}</li>
+  {{/each}}
+</ul>
+
 {{new-question save="save"}}

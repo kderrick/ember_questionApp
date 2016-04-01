@@ -1,3 +1,6 @@
 <h2>{{model.title}} {{model.author}} {{model.details}}</h2>
 {{update-question question=model update="update"}}
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
+
+<!-- {{answer-pane answers=model.answers destroyAnswer="destroyAnswer" update="update"}} -->
+{{new-answer question=model saveAnswer="saveAnswer"}}
