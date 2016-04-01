@@ -5,7 +5,9 @@
 
 <ul>
   {{#each model as |question|}}
-     <li>{{question.title}} by {{question.author}}.</li>
-     <h6>Additional info: {{question.details}}</h6>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
+
+<!-- <li>{{question.title}} by {{question.author}}.</li>
+<h6>Additional info: {{question.details}}</h6> -->
