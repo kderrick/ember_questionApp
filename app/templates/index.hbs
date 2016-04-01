@@ -8,12 +8,12 @@
     {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
   {{/each}}
 </ul>
+{{new-question save="save"}}
 
+<h3>Answers below are generated from dynam question pages, however, they are currently unassociated with each other</h3>
 
 <ul>
   {{#each model.answers as |answer|}}
     <li>{{answer.title}} {{answer.author}}</li>
   {{/each}}
 </ul>
-
-{{new-question save="save"}}
