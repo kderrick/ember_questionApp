@@ -4,7 +4,7 @@
 
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
   {{/each}}
 </ul>
