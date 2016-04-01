@@ -1,4 +1,5 @@
-<li>{{question.title}} by {{question.author}}.</li>
+<li>{{question.title}} by {{question.author}}
 <h6>Additional info: {{question.details}} </h6>
-
+{{update-question question=question update="update"}}
 <button {{action 'delete' question}}>Delete Question</button>
+</li>
