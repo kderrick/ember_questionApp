@@ -5,9 +5,19 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
 
-  fullResponse: Ember.computed('question.answers.title', 'question.answers.author', function() {
-    return this.get('question.answers.title') + ': ' + this.get('question.answers.author');
-  }),
+  // fullQuestionDetails: Ember.computed('question.title', 'question.author', function() {
+  //   return this.get('question.title') + " " + this.get('question.author') + " " + this.get('question.details');
+  // }),
+  //
+  // fullResponse: Ember.computed('question.answers.title', 'question.answers.author', function() {
+  //   this.get('question').get('answers').map(function(answer) {
+  //     return answer.get('title');
+  //   });
+  // }),
+  //
+  // fullLocation: Ember.computed('answer.title', function() {
+  //   return this.get('answer.title');
+  // }),
   // sortBy: ['votes:asc'],
   //
   // sortedAnswers: Ember.computed.sort('question.answers.votes', 'sortBy'),

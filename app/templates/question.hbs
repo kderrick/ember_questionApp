@@ -1,11 +1,11 @@
-<h2>{{model.title}} {{model.author}} {{model.details}}</h2>
+<!-- <h2>{{model.title}} {{model.author}} {{model.details}}</h2> --> 
+<h2>{{fullQuestionDetails}}</h2>
 {{update-question question=model update="update"}}
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
-<!-- {{answer-pane answers=model.answers destroyAnswer="destroyAnswer" update="update"}} -->
 {{new-answer question=model saveAnswer="saveAnswer"}}
 {{#each model.answers as |answer|}}
-  <li>{{fullResponse}} | Created at: {{answer.timestamp}}</li>
+  <li> {{fullResponse}} {{fullLocation}} | Created at: {{answer.timestamp}}</li>
   <button {{action 'upVoteAnswer' answer}}>Up Vote!</button>
   <!-- <button {{action 'downVoteAnswer' answer}}>Down Vote!</button> -->
   <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
