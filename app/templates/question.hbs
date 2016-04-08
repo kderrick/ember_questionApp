@@ -6,6 +6,6 @@
 {{new-answer question=model saveAnswer="saveAnswer"}}
 {{#each model.answers as |answer|}}
   <li>{{answer.title}} : {{answer.author}}</li>
-  <button {{action 'delete' answer}}>Delete Answer</button>
+  <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
   <!-- {{update-comment comment=comment update="update"}} -->
 {{/each}}
