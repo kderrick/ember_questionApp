@@ -3,10 +3,16 @@
 <h3>Please post a question below</h3>
 <h2>Click on a question link to provide on answer and view other previous answers</h2>
 
+Icon Key :
+
+    <li><span class="glyphicon glyphicon-fire"> = At least 3 answers</span></li>
+
+
+<hr>
 
 <ul>
   {{#each model.questions as |question|}}
-    {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
+  {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
   {{/each}}
 </ul>
 {{new-question save="save"}}

@@ -1,5 +1,16 @@
-{{#link-to 'index'}}<h2>Question App!</h2>{{/link-to}}
-{{#link-to 'contact'}}<h2>Contact Us</h2>{{/link-to}}
+<div class="jumbotron text-center">
+  {{#link-to 'index'}}<h2>Question App!</h2>{{/link-to}}
+</div>
+
+<div class="container">
   <!-- {{#link-to 'about'}}<h4>About</h4>{{/link-to}} -->
 
   {{outlet}}
+
+  <hr>
+  <footer>
+    <div class="contact-link text-center">
+      {{#link-to 'contact'}}<h2>Contact Us</h2>{{/link-to}}
+    </div>
+  </footer>
+</div>
