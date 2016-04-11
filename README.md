@@ -1,7 +1,6 @@
 # Question-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an web application that would allow a user (unauthenticated) to post a question, which would then allow other users (unauthenticated) to respond to the questions with seperate answers. 
 
 ## Prerequisites
 
